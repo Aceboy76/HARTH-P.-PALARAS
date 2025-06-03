@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import FooterLayout from "./layout"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
   const contacts = [
@@ -43,7 +44,7 @@ export default function Footer() {
         <div className="px-4 w-full max-w-md space-y-5 mx-auto">
           {contacts.map(({ icon, href, label, external }) => (
             <div key={href} className="flex items-center space-x-3">
-              <img src={icon} alt="" className="w-8 h-8 sm:w-10 sm:h-10" />
+              <Image src={icon} alt="" className="w-8 h-8 sm:w-10 sm:h-10" />
               {external ? (
                 <a
                   href={href}
