@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image"
 
 export default function Tech() {
     const [techItems, setTechItems] = useState(initialTechItems)
@@ -31,7 +32,7 @@ export default function Tech() {
                             transition={spring}
                             className="w-full aspect-square rounded-4xl bg-slate-600 flex items-center justify-center"
                         >
-                            <img
+                            <Image
                                 src={tech.icon}
                                 alt={tech.name}
                                 className={`${tech.size} object-contain max-w-full max-h-full`}
@@ -72,22 +73,3 @@ const spring = {
     stiffness: 300,
 }
 
-const container: React.CSSProperties = {
-    listStyle: "none",
-    padding: 0,
-    margin: 0,
-    position: "relative",
-    display: "flex",
-    flexWrap: "wrap",
-    gap: 10,
-    width: 300,
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-}
-
-const item: React.CSSProperties = {
-    width: 100,
-    height: 100,
-    borderRadius: "10px",
-}

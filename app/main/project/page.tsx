@@ -4,6 +4,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function Project() {
   return (
@@ -40,7 +41,7 @@ export default function Project() {
           </CardHeader>
           <CardContent className="flex flex-col lg:flex-row gap-6">
             <div className="w-full lg:w-1/2 flex justify-center">
-              <img
+              <Image
                 src="/jk.png"
                 alt="Sales and Inventory System For JK Store"
                 className="max-w-full h-auto rounded-md shadow-md"
@@ -49,7 +50,7 @@ export default function Project() {
             </div>
             <div className="w-full lg:w-1/2 text-lg text-justify space-y-4">
               <p>
-                Developed a comprehensive Sales and Inventory System for JK Store as part of a capstone project, aimed at modernizing and automating the store’s retail operations. The system streamlined multiple core processes including inventory tracking, sales transactions, and stock management, which helped minimize manual errors and reduce data redundancy. Through in-depth analysis of the store's existing workflow, the project identified and resolved several operational bottlenecks. Designed and implemented using the Laravel framework, the system features a user-friendly interface, efficient database structure, and robust functionality tailored to the specific needs of a retail environment. This project significantly improved the overall efficiency and accuracy of the store’s daily operations.
+                Developed a comprehensive Sales and Inventory System for JK Store as part of a capstone project, aimed at modernizing and automating the store’s retail operations. The system streamlined multiple core processes including inventory tracking, sales transactions, and stock management, which helped minimize manual errors and reduce data redundancy. Through in-depth analysis of the store's existing workflow, the project identified and resolved several operational bottlenecks. Designed and implemented using the Laravel framework, the system features a user-friendly interface, efficient database structure, and robust functionality tailored to the specific needs of a retail environment. This project significantly improved the overall efficiency and accuracy of the store&apos;s daily operations.
               </p>
             </div>
           </CardContent>
