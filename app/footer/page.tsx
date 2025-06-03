@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import FooterLayout from "./layout"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function Footer() {
   const contacts = [
@@ -41,24 +40,24 @@ export default function Footer() {
             Contact me
           </p>
         </div>
-        <div className="px-4 w-full max-w-md space-y-5 mx-auto">
+        <div className="w-full max-w-md space-y-5 mx-auto">
           {contacts.map(({ icon, href, label, external }) => (
-            <div key={href} className="flex items-center space-x-3">
-              <Image src={icon} alt="" className="w-8 h-8 sm:w-10 sm:h-10" />
+            <div key={href} className="flex items-center ">
+              <img src={icon} alt="" className="w-8 h-8 sm:w-8 sm:h-8" />
               {external ? (
                 <a
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="truncate max-w-xs text-left"
+                  className="truncate w-full text-left"
                 >
-                  <Button variant="link" className="text-lg font-rubik truncate">
+                  <Button variant="link" className="text-sm lg:text-lg font-rubik text-left break-all whitespace-normal">
                     {label}
                   </Button>
                 </a>
               ) : (
                 <Link href={href}>
-                  <Button variant="link" className="text-lg font-rubik truncate max-w-xs text-left">
+                  <Button variant="link" className="text-sm lg:text-lg font-rubik text-left break-all whitespace-normal">
                     {label}
                   </Button>
                 </Link>

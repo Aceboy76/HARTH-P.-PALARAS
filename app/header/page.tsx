@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <HeaderLayout>
       <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-4">
-        <div className="text-2xl lg:text-3xl font-syne font-bold">HPP</div>
+        <div className="text-3xl font-syne font-bold">HPP</div>
 
         <div className="flex flex-wrap justify-center gap-3 text-sm">
           {[

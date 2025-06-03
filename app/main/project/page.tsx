@@ -4,7 +4,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
 
 export default function Project() {
   return (
@@ -41,7 +40,7 @@ export default function Project() {
           </CardHeader>
           <CardContent className="flex flex-col lg:flex-row gap-6">
             <div className="w-full lg:w-1/2 flex justify-center">
-              <Image
+              <img
                 src="/jk.png"
                 alt="Sales and Inventory System For JK Store"
                 className="max-w-full h-auto rounded-md shadow-md"
